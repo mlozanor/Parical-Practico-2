@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ cafeDetail.nombre }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ cafeDetail.imagen }}"
+          alt="{{ cafeDetail.nombre }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt>regiones</dt>
+        <dd class="caption" *ngFor="let author of cafeDetail.regiones">
+        </dd>
+
+        <dt>Tipo</dt>
+        <dd>{{ cafeDetail.tipo }}</dd>
+      </dl>
+    </div>
+  </div>
+</div>
